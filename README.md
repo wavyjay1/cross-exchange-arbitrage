@@ -1,3 +1,35 @@
+##### 关注我 **X (Twitter)**: [@yourQuantGuy](https://x.com/yourQuantGuy)
+
+---
+
+**English speakers**: Please read [README_EN.md](README_EN.md) for the English version of this documentation.
+
+---
+
+## 邀请链接 (获得返佣以及福利)
+
+#### edgeX: [https://pro.edgex.exchange/referral/QUANT](https://pro.edgex.exchange/referral/QUANT)
+
+永久享受 VIP 1 费率；额外 10% 手续费返佣；10% 额外奖励积分
+
+#### Backpack: [https://backpack.exchange/join/quant](https://backpack.exchange/join/quant)
+
+使用我的推荐链接获得 35% 手续费返佣
+
+#### Paradex: [https://app.paradex.trade/r/quant](https://app.paradex.trade/r/quant)
+
+使用我的推荐链接获得 10% 手续费返佣以及 5% 积分加成
+
+#### grvt: [https://grvt.io/exchange/sign-up?ref=QUANT](https://grvt.io/exchange/sign-up?ref=QUANT)
+
+获得 1.3x 全网最高的积分加成；30% 手动反佣
+
+#### Extended: [https://app.extended.exchange/join/QUANT](https://app.extended.exchange/join/QUANT)
+
+10%的即时手续费减免；5% 积分加成
+
+---
+
 # 跨交易所套利机器人
 
 本项目是一个加密货币期货跨所套利的框架，仅为分享交流目的，不能直接用于生产环境，实际交易需谨慎使用。
@@ -30,13 +62,33 @@ git clone <repository-url>
 cd cross-exchange-arbitrage
 ```
 
-### 2. 安装依赖
+### 2. 创建虚拟环境
+
+```bash
+python -m venv venv
+```
+
+激活虚拟环境：
+
+**macOS/Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. 配置环境变量
+### 4. 配置环境变量
 
 复制 `env_example.txt` 为 `.env` 并填写您的 API 凭证：
 
