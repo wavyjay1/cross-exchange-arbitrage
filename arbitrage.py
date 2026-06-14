@@ -7,6 +7,16 @@ import dotenv
 from strategy.edgex_arb import EdgexArb
 
 
+def validate_exchange(value):
+    """Validate that the exchange is supported."""
+    supported = ['edgex']
+    if value.lower() not in supported:
+        raise argparse.ArgumentTypeError(
+            f"Unsupported exchange '{value}'. Supported: {', '.join(supported)}"
+        )
+    return value.lower()
+
+
 def parse_arguments():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
@@ -14,7 +24,7 @@ def parse_arguments():
         formatter_class=argparse.RawDescriptionHelpFormatter
         )
 
-    parser.add_argument('--exchange', type=str, default='edgex',
+    parser.add_argument('--exchange', type=validate_exchange, default='edgex',
                         help='Exchange to use (edgex)')
     parser.add_argument('--ticker', type=str, default='BTC',
                         help='Ticker symbol (default: BTC)')
@@ -31,23 +41,11 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def validate_exchange(exchange):
-    """Validate that the exchange is supported."""
-    supported_exchanges = ['edgex']
-    if exchange.lower() not in supported_exchanges:
-        print(f"Error: Unsupported exchange '{exchange}'")
-        print(f"Supported exchanges: {', '.join(supported_exchanges)}")
-        sys.exit(1)
-
-
 async def main():
     """Main entry point that creates and runs the cross-exchange arbitrage bot."""
     args = parse_arguments()
 
     dotenv.load_dotenv()
-
-    # Validate exchange
-    validate_exchange(args.exchange)
 
     try:
         bot = EdgexArb(
